@@ -1,22 +1,8 @@
-import { animated, useSpring } from "@react-spring/web";
+import { RouterProvider } from "react-router-dom";
+import router from "./router";
 
 function App() {
-  const springs = useSpring({
-    from: { x: 0 },
-    to: { x: 100 },
-  });
-
-  return (
-    <animated.div
-      style={{
-        width: 80,
-        height: 80,
-        backgroundColor: "hotpink",
-        borderRadius: 8,
-        ...springs,
-      }}
-    />
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
