@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Index from "./pages";
 import I from "./pages/i";
 import II from "./pages/ii";
+import III from "./pages/iii";
 
 const router = createBrowserRouter([
   { path: "/", element: <Index /> },
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
   {
     path: "/ii",
     element: <II />,
+  },
+  {
+    path: "/iii",
+    element: <III />,
   },
 ]);
 

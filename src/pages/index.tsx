@@ -11,6 +11,9 @@ export default function Index() {
         <li>
           <Link to={"/ii"}>Reacting to Events</Link>
         </li>
+        <li>
+          <Link to={"/iii"}>Reacting to Events - Tweaking (i)</Link>
+        </li>
       </ol>
     </main>
   );
