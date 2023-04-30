@@ -1,8 +1,8 @@
 import { animated, useSpring } from "@react-spring/web";
 import { Link } from "react-router-dom";
+import Code from "../components/code";
 
-const contents = `
-  const springs = useSpring({
+const contents = `  const springs = useSpring({
     from: { x: 0 },
     to: { x: 100 },
   });
@@ -32,9 +32,7 @@ export default function I() {
     <main>
       <Link to="/">Back to top</Link>
       <h2>Basic Example</h2>
-      <pre style={{ maxWidth: "80ch" }}>
-        <code>{contents}</code>
-      </pre>
+      <Code contents={contents} />
       <section style={{ marginTop: "1.5rem" }}>
         <animated.div
           style={{

@@ -4,11 +4,14 @@ export default function Index() {
   return (
     <main>
       <h2>List of demos</h2>
-      <ul>
+      <ol>
         <li>
-          <Link to={"/i"}>1. Basic Example</Link>
+          <Link to={"/i"}>Basic Example</Link>
         </li>
-      </ul>
+        <li>
+          <Link to={"/ii"}>Reacting to Events</Link>
+        </li>
+      </ol>
     </main>
   );
 }
